@@ -1,8 +1,7 @@
 import React from "react"
-// import { useState, useCallback, useEffect } from 'react'
 import request from "axios"
 
-export const useAxios = () => {
+export default function useAxios() {
   const [data, setData] = React.useState({})
   const [pending, setPending] = React.useState(false)
   const [success, setSuccess] = React.useState(false)
